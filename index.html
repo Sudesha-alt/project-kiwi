@@ -20,5 +20,20 @@
     <main id="app-view"></main>
   </div>
   <script type="module" src="/main.js"></script>
+  <script>
+(function (d,h,w) {
+        s=d.createElement("script");
+        s.src="https://sense.sdk.convin.ai/";
+        e = d.getElementsByTagName(h)[0];
+        e.appendChild(s);
+        s.addEventListener("load", function (e) {
+            w.ConvinSense.init({
+            appId: "3a22611b-2013-4a46-91fe-74337f97d916",
+            tenantId: "mosaic-wellness",
+        });
+        }, false);
+
+})(document, "head", window);
+</script>
 </body>
 </html>
