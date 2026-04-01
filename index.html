@@ -20,5 +20,19 @@
     <main id="app-view"></main>
   </div>
   <script type="module" src="/main.js"></script>
+  <script>
+(function (d,h,w) {
+s=d.createElement("script");
+s.src="https://sense.sdk.convin.ai/";
+e = d.getElementsByTagName(h)[0];
+e.appendChild(s);
+s.addEventListener("load", function (e) {
+w.ConvinSense.init({
+appId: "YOUR_APP_ID",
+tenantId: "YOUR_TENANT_ID"
+});
+}, false);
+});(document, "head", window);
+</script>
 </body>
 </html>
