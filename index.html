@@ -20,19 +20,20 @@
     <main id="app-view"></main>
   </div>
   <script type="module" src="/main.js"></script>
-  <script>
+<script>
 (function (d,h,w) {
-s=d.createElement("script");
-s.src="https://sense.sdk.convin.ai/";
-e = d.getElementsByTagName(h)[0];
-e.appendChild(s);
-s.addEventListener("load", function (e) {
-w.ConvinSense.init({
-appId: "YOUR_APP_ID",
-tenantId: "YOUR_TENANT_ID"
-});
-}, false);
-});(document, "head", window);
+        s=d.createElement("script");
+        s.src="https://sense.sdk.convin.ai/";
+        e = d.getElementsByTagName(h)[0];
+        e.appendChild(s);
+        s.addEventListener("load", function (e) {
+            w.ConvinSense.init({
+            appId: "be1a33f5-0c0f-456d-9e5d-459dbde30863",
+            tenantId: "app",
+        });
+        }, false);
+
+})(document, "head", window);
 </script>
 </body>
 </html>
